@@ -4,10 +4,6 @@ import img2 from 'src/assets/images/profile/user-2.jpg';
 import img3 from 'src/assets/images/profile/user-3.jpg';
 import img4 from 'src/assets/images/profile/user-4.jpg';
 
-import icon1 from 'src/assets/images/svgs/icon-account.svg'
-import icon2 from 'src/assets/images/svgs/icon-inbox.svg'
-import icon3 from 'src/assets/images/svgs/icon-tasks.svg'
-
 import ddIcon1 from 'src/assets/images/svgs/icon-dd-chat.svg'
 import ddIcon2 from 'src/assets/images/svgs/icon-dd-cart.svg'
 import ddIcon3 from 'src/assets/images/svgs/icon-dd-invoice.svg'
@@ -64,28 +60,9 @@ const notifications = [
 ];
 
 //
-// Profile dropdown
+// Profile dropdown (eliminado)
 //
-const profile = [
-  {
-    href: '/user-profile',
-    title: 'My Profile',
-    subtitle: 'Account Settings',
-    icon: icon1,
-  },
-  {
-    href: '/apps/email',
-    title: 'My Inbox',
-    subtitle: 'Messages & Emails',
-    icon: icon2,
-  },
-  {
-    href: '/apps/notes',
-    title: 'My Tasks',
-    subtitle: 'To-do and Daily Tasks',
-    icon: icon3,
-  },
-];
+const profile = [];
 
 // apps dropdown
 
@@ -117,13 +94,13 @@ const appsLink = [
   {
     href: '/apps/contacts',
     title: 'Contact Application',
-    subtext: 'Account settings',
+    subtext: 'User settings',
     avatar: ddIcon5
   },
   {
     href: '/apps/tickets',
     title: 'Tickets App',
-    subtext: 'Account settings',
+    subtext: 'User settings',
     avatar: ddIcon6
   },
   {
@@ -144,14 +121,6 @@ const pageLinks = [
   {
     href: '/pricing',
     title: 'Pricing Page'
-  },
-  {
-    href: '/auth/login',
-    title: 'Authentication Design'
-  },
-  {
-    href: '/auth/register',
-    title: 'Register Now'
   },
   {
     href: '/404',

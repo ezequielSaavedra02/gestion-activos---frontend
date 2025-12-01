@@ -1,9 +1,7 @@
 import React from 'react';
-import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge, Button } from '@mui/material';
+import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge } from '@mui/material';
 import PropTypes from 'prop-types';
-import Link from 'next/link';
 // components
-import Profile from './Profile';
 import { IconBellRinging, IconMenu } from '@tabler/icons-react';
 
 interface ItemType {
@@ -62,10 +60,7 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
         </IconButton>
         <Box flexGrow={1} />
         <Stack spacing={1} direction="row" alignItems="center">
-          <Button variant="contained" component={Link} href="/authentication/login"   disableElevation color="primary" >
-            Login
-          </Button>
-          <Profile />
+          {/* Botón de Login y Perfil eliminados */}
         </Stack>
       </ToolbarStyled>
     </AppBarStyled>

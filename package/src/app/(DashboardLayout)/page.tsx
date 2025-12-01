@@ -1,56 +1,26 @@
 'use client'
 import { Grid, Box } from '@mui/material';
 import PageContainer from '@/app/(DashboardLayout)/components/container/PageContainer';
-// components
-import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOverview';
-import YearlyBreakup from '@/app/(DashboardLayout)/components/dashboard/YearlyBreakup';
-import RecentTransactions from '@/app/(DashboardLayout)/components/dashboard/RecentTransactions';
-import ProductPerformance from '@/app/(DashboardLayout)/components/dashboard/ProductPerformance';
-import Blog from '@/app/(DashboardLayout)/components/dashboard/Blog';
-import MonthlyEarnings from '@/app/(DashboardLayout)/components/dashboard/MonthlyEarnings';
+import EstadisticasGenerales from '@/app/(DashboardLayout)/components/dashboard/EstadisticasGenerales';
+import MovimientosEquiposRecientes from '@/app/(DashboardLayout)/components/dashboard/MovimientosEquiposRecientes';
+import ConsumosRepuestosRecientes from '@/app/(DashboardLayout)/components/dashboard/ConsumosRepuestosRecientes';
 
 const Dashboard = () => {
   return (
-    <PageContainer title="Dashboard" description="this is Dashboard">
+    <PageContainer title="Dashboard de Estadísticas" description="Estadísticas de gestión de activos">
       <Box>
         <Grid container spacing={3}>
-          <Grid
-            size={{
-              xs: 12,
-              lg: 8
-            }}>
-            <SalesOverview />
+          {/* Gráfico de Estadísticas */}
+          <Grid item xs={12}>
+            <EstadisticasGenerales />
           </Grid>
-          <Grid
-            size={{
-              xs: 12,
-              lg: 4
-            }}>
-            <Grid container spacing={3}>
-              <Grid size={12}>
-                <YearlyBreakup />
-              </Grid>
-              <Grid size={12}>
-                <MonthlyEarnings />
-              </Grid>
-            </Grid>
+
+          {/* Listados de Movimientos */}
+          <Grid item xs={12} lg={6}>
+            <MovimientosEquiposRecientes />
           </Grid>
-          <Grid
-            size={{
-              xs: 12,
-              lg: 4
-            }}>
-            <RecentTransactions />
-          </Grid>
-          <Grid
-            size={{
-              xs: 12,
-              lg: 8
-            }}>
-            <ProductPerformance />
-          </Grid>
-          <Grid size={12}>
-            <Blog />
+          <Grid item xs={12} lg={6}>
+            <ConsumosRepuestosRecientes />
           </Grid>
         </Grid>
       </Box>

@@ -1,11 +1,11 @@
 import {
-  IconAperture,
-  IconCopy,
-  IconLayoutDashboard,
-  IconLogin,
-  IconMoodHappy,
-  IconTypography,
-  IconUserPlus,
+    IconAperture, IconBrandFeedly,
+    IconCopy,
+    IconLayoutDashboard,
+    IconLogin, IconMenuOrder,
+    IconMoodHappy, IconPrinter, IconReplace,
+    IconTypography,
+    IconUserPlus,
 } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
@@ -18,61 +18,43 @@ const Menuitems = [
 
   {
     id: uniqueId(),
-    title: "Dashboard",
+    title: "Inicio",
     icon: IconLayoutDashboard,
     href: "/",
   },
   {
     navlabel: true,
-    subheader: "UTILITIES",
+    subheader: "Equipo",
   },
   {
     id: uniqueId(),
-    title: "Typography",
-    icon: IconTypography,
-    href: "/utilities/typography",
+    title: "Impresoras",
+    icon: IconPrinter,
+    href: "/utilities/impresora",
   },
   {
     id: uniqueId(),
-    title: "Shadow",
-    icon: IconCopy,
-    href: "/utilities/shadow",
+    title: "Repuestos",
+    icon: IconReplace,
+    href: "/utilities/repuesto",
   },
   {
     navlabel: true,
-    subheader: "AUTH",
+    subheader: " Movimientos",
   },
   {
     id: uniqueId(),
-    title: "Login",
-    icon: IconLogin,
-    href: "/authentication/login",
+    title: "Consumo de Repuestos",
+    icon: IconBrandFeedly,
+    href: "/consumo-repuesto",
   },
   {
     id: uniqueId(),
-    title: "Register",
-    icon: IconUserPlus,
-    href: "/authentication/register",
-  },
-  {
-    navlabel: true,
-    subheader: " EXTRA",
-  },
-  {
-    id: uniqueId(),
-    title: "Icons",
-    icon: IconMoodHappy,
-    href: "/icons",
-  },
-  {
-    id: uniqueId(),
-    title: "Sample Page",
-    icon: IconAperture,
-    href: "/sample-page",
+    title: "Orden de mantenimiento",
+    icon: IconMenuOrder,
+    href: "/orden-mantenimiento",
   },
 
 ];
 
 export default Menuitems;
-
-

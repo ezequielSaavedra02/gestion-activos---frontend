@@ -2,7 +2,6 @@ import React from "react";
 import Menuitems from "./MenuItems";
 import { Box, Typography } from "@mui/material";
 import {
-  Logo,
   Sidebar as MUI_Sidebar,
   Menu,
   MenuItem,
@@ -75,7 +74,30 @@ const SidebarItems = () => {
     < >
       <MUI_Sidebar width={"100%"} showProfile={false} themeColor={"#5D87FF"} themeSecondaryColor={'#49beff'} >
 
-        <Logo img='/images/logos/dark-logo.svg' component={Link} to="/" >Modernize</Logo>
+        <Box
+          component={Link}
+          href="/"
+          sx={{
+            textDecoration: 'none',
+            p: 2,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            gap: '10px'
+          }}
+        >
+          <img src="/images/logos/images.png" alt="Logo" style={{ height: '40px' }} />
+          <Typography
+            variant="h5"
+            component="div"
+            sx={{
+              fontWeight: 'bold',
+              color: '#000000'
+            }}
+          >
+            Gestión de Activos
+          </Typography>
+        </Box>
 
         {renderMenuItems(Menuitems, pathDirect)}
         <Box px={2}>
