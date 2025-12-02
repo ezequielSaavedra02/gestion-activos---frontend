@@ -3,7 +3,7 @@ import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
 
 // Configuración base de Axios
 const axiosClient: AxiosInstance = axios.create({
-    baseURL: 'http://localhost:8080/api', // Ajusta según tu configuración
+    baseURL: 'https://gestion-activos-backend-production.up.railway.app/api', // Ajusta según tu configuración
     headers: {
         'Content-Type': 'application/json',
         'Accept': 'application/json',

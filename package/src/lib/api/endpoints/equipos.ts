@@ -12,7 +12,7 @@ export interface Equipo {
 }
 
 // URL base de la API de equipos
-const API_BASE_URL = 'http://localhost:8080/api/equipos';
+const API_BASE_URL = 'https://gestion-activos-backend-production.up.railway.app/api/equipos';
 
 /**
  * Función genérica para manejar errores de la respuesta HTTP de fetch.

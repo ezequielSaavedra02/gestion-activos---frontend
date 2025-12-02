@@ -23,9 +23,9 @@ export interface ConsumoRepuesto {
 }
 
 // URLs base de las APIs (Mantenidas)
-const API_CONSUMOS_URL = 'http://localhost:8080/api/consumos-repuesto';
-const API_ORDENES_URL = 'http://localhost:8080/api/ordenes-mantenimiento';
-const API_REPUESTOS_URL = 'http://localhost:8080/api/repuestos';
+const API_CONSUMOS_URL = 'https://gestion-activos-backend-production.up.railway.app/api/consumos-repuesto';
+const API_ORDENES_URL = 'https://gestion-activos-backend-production.up.railway.app/api/ordenes-mantenimiento';
+const API_REPUESTOS_URL = 'https://gestion-activos-backend-production.up.railway.app/api/repuestos';
 
 // ... (handleFetchError function)
 

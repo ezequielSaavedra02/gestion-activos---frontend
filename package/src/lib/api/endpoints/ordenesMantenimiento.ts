@@ -15,8 +15,8 @@ export interface OrdenMantenimiento {
 }
 
 // URLs base de las APIs
-const API_ORDENES_URL = 'http://localhost:8080/api/ordenes-mantenimiento';
-const API_EQUIPOS_URL = 'http://localhost:8080/api/equipos';
+const API_ORDENES_URL = 'https://gestion-activos-backend-production.up.railway.app/api/ordenes-mantenimiento';
+const API_EQUIPOS_URL = 'https://gestion-activos-backend-production.up.railway.app/api/equipos';
 
 /**
  * Función genérica para manejar errores de la respuesta HTTP de fetch.

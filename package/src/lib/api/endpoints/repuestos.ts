@@ -9,7 +9,7 @@ export interface Repuesto {
 }
 
 // URL base de la API de repuestos
-const API_BASE_URL = 'http://localhost:8080/api/repuestos';
+const API_BASE_URL = 'https://gestion-activos-backend-production.up.railway.app/api/repuestos';
 
 /**
  * Función genérica para manejar errores de la respuesta HTTP de fetch.
